@@ -31,4 +31,6 @@
     <string name="tinggi_badan">Tinggi badan</string>
     <string name="masukkan_tinggi_badan">Masukkan TInggi Badan</string>
     <string name="name">Nama</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

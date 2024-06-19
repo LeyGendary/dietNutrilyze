@@ -26,7 +26,7 @@
             android:exported="false"
             android:label="@string/title_activity_login" />
         <activity
-            android:name=".WelcomeActivity"
+            android:name=".data.WelcomeActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
