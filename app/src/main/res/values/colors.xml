@@ -7,4 +7,5 @@
     <color name= "grey_t">#80DDDDDD</color>
     <color name="grey">#DDDDDD</color>
     <color name="transparent">#00FFFFFF</color>
+    <color name="simplebackgroundcolor">#000000</color>
 </resources>
