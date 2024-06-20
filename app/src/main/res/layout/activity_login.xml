@@ -29,8 +29,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-    <EditText
-        android:id="@+id/editTextTextEmailAddress"
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_email"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -46,8 +46,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-    <EditText
-        android:id="@+id/editTextTextPassword"
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_password"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -61,7 +61,7 @@
         android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+        app:layout_constraintTop_toBottomOf="@+id/et_email" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/sign_in_button"
@@ -75,7 +75,7 @@
         android:text="@string/sign_in"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/et_password" />
 
     <LinearLayout
         android:layout_width="234dp"
@@ -98,7 +98,7 @@
             android:textAlignment="center" />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/tv_sign_up"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"

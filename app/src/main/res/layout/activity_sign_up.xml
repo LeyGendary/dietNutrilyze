@@ -29,25 +29,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/iv_logo_dn_capt" />
 
-    <EditText
-        android:id="@+id/editTextTextName"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
-        android:padding="10dp"
-        android:background="@drawable/edit_text"
-        android:drawableStart="@drawable/ic_person"
-        android:drawablePadding="15dp"
-        android:hint="@string/name"
-        android:inputType="textEmailAddress"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_create_your_account" />
 
-    <EditText
-        android:id="@+id/editTextTextEmailAddress"
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_email"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -61,10 +45,10 @@
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextName" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_create_your_account" />
 
-    <EditText
-        android:id="@+id/editTextTextPassword"
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_password"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -78,7 +62,24 @@
         android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+        app:layout_constraintTop_toBottomOf="@+id/et_email" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_confirm_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/edit_text"
+        android:drawableStart="@drawable/mdi_password"
+        android:drawablePadding="15dp"
+        android:hint="@string/confirm_password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_password" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/sign_in_button"
@@ -92,7 +93,7 @@
         android:text="@string/sign_up"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/et_confirm_password" />
 
     <LinearLayout
         android:layout_width="234dp"
@@ -115,7 +116,7 @@
             android:textAlignment="center" />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/tv_sign_in"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"

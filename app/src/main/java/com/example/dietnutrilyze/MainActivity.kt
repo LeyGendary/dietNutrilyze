@@ -2,10 +2,42 @@ package com.example.dietnutrilyze
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.fragment.app.Fragment
+import com.example.dietnutrilyze.databinding.ActivityMainBinding
+import com.example.dietnutrilyze.fragment.Home
+import com.example.dietnutrilyze.fragment.Profile
 
 class MainActivity : AppCompatActivity() {
+
+    private  lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        replaceFragment(Home())
+
+        binding.bottomNavigationView.setOnItemSelectedListener {
+            when(it.itemId){
+                R.id.home -> {
+                    replaceFragment(Home())
+                    return@setOnItemSelectedListener true
+                }
+                R.id.profile -> {
+                    replaceFragment(Profile())
+                    return@setOnItemSelectedListener true
+                }
+                else -> false
+            }
+        }
+    }
+
+    private fun replaceFragment(fragment: Fragment){
+
+        val fragmentManager = supportFragmentManager
+        val fragmentTransaction = fragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.fragment_container, fragment)
+        fragmentTransaction.commit()
+
     }
 }

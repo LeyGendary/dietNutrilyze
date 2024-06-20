@@ -10,7 +10,7 @@
         android:id="@+id/masukan_data_anda"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="60dp"
         android:text="@string/masukan_data_anda"
         android:textColor="#777777"
         android:textSize="24sp"
@@ -21,16 +21,46 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tv_jenisKelamin"
+        android:id="@+id/tv_nama"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="48dp"
-        android:text="Jenis Kelamin"
+        android:layout_marginTop="24dp"
+        android:text="Nama"
         android:textColor="#6A6A6A"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/masukan_data_anda" />
+
+    <EditText
+        android:id="@+id/et_nama"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/edit_text"
+        android:hint="@string/masukkan_nama"
+        android:padding="10dp"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nama"
+        android:autofillHints="creditCardNumber" />
+
+    <TextView
+        android:id="@+id/tv_jenisKelamin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:text="Jenis Kelamin"
+        android:textColor="#6A6A6A"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_nama" />
+
+
 
     <RadioGroup
         android:id="@+id/SexRadioGroup"
@@ -85,7 +115,7 @@
         app:layout_constraintTop_toBottomOf="@+id/SexRadioGroup" />
 
     <EditText
-        android:id="@+id/editTextUsia"
+        android:id="@+id/et_usia"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -110,10 +140,10 @@
         android:textSize="16sp"
         android:text="@string/berat_badan"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextUsia" />
+        app:layout_constraintTop_toBottomOf="@+id/et_usia" />
 
     <EditText
-        android:id="@+id/editTextBeratBadan"
+        android:id="@+id/et_bb"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -138,10 +168,10 @@
         android:textSize="16sp"
         android:text="@string/tinggi_badan"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextBeratBadan" />
+        app:layout_constraintTop_toBottomOf="@+id/et_bb" />
 
     <EditText
-        android:id="@+id/editTextTinggiBadan"
+        android:id="@+id/et_tb"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
