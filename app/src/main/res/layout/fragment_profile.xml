@@ -42,7 +42,7 @@
                 android:id="@+id/tv_nama"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Gilang Tyas Prayoga"
+                android:text=""
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="20sp"
@@ -52,7 +52,7 @@
                 android:id="@+id/tv_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="giiang@gmail.com"
+                android:text=""
                 android:textAlignment="center"
                 android:textSize="18sp" />
         </LinearLayout>
@@ -67,9 +67,20 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
-
-
         </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/logout_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/red_button"
+            android:text="Logout"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

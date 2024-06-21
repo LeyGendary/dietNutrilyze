@@ -52,7 +52,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
-            android:text="Nama"
+            android:text=""
             android:textAlignment="center"
             android:textColor="#6A6A6A"
             android:textSize="24sp"
