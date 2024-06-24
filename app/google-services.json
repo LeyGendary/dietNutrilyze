@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "960142309863",
+    "project_id": "diet-nutrilyze-b55fb",
+    "storage_bucket": "diet-nutrilyze-b55fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:960142309863:android:cb7ef5851961460e976542",
+        "android_client_info": {
+          "package_name": "com.example.dietnutrilyze"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4EqeIBdAf-FL_QZUlMcBTc4rjn52WLOk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

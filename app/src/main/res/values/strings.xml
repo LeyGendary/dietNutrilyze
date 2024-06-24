@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Diet Nutrilyze</string>
+    <string name="welcome_to">Welcome to</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="login">Login</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="login_to_your_account">Login to Your Account</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="don_t_have_an_account">Don\'t Have an Account?</string>
+    <string name="sign_up_text">Sign Up</string>
+    <string name="create_your_account">Create Your Account</string>
+    <string name="already_have_an_account">Already Have an Account?</string>
+    <string name="laki_laki">Laki-Laki</string>
+    <string name="perempuan">Perempuan</string>
+    <string name="usia">Usia</string>
+    <string name="masukkan_usia">Masukkan Usia</string>
+    <string name="masukan_data_anda">MASUKAN DATA ANDA</string>
+    <string name="berat_badan">Berat badan</string>
+    <string name="masukkan_berat_badan">Masukkan Berat Badan</string>
+    <string name="selanjutnya">Selanjutnya</string>
+    <string name="tinggi_badan">Tinggi badan</string>
+    <string name="masukkan_tinggi_badan">Masukkan TInggi Badan</string>
+    <string name="name">Nama</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="masukkan_nama">Masukkan Nama</string>
+</resources>

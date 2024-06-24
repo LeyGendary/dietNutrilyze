@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".data.FirstDataActivity">
+
+    <TextView
+        android:id="@+id/masukan_data_anda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/masukan_data_anda"
+        android:textColor="#777777"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="Nama"
+        android:textColor="#6A6A6A"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/masukan_data_anda" />
+
+    <EditText
+        android:id="@+id/et_nama"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/edit_text"
+        android:hint="@string/masukkan_nama"
+        android:padding="10dp"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nama"
+        android:autofillHints="creditCardNumber" />
+
+    <TextView
+        android:id="@+id/tv_jenisKelamin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:text="Jenis Kelamin"
+        android:textColor="#6A6A6A"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_nama" />
+
+
+
+    <RadioGroup
+        android:id="@+id/SexRadioGroup"
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_jenisKelamin">
+
+        <RadioButton
+            android:id="@+id/maleRadioButton"
+            android:background="@drawable/radio_selector"
+            android:padding="10dp"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:button="@color/transparent"
+            android:drawableTop="@drawable/ic_male"
+            android:text="@string/laki_laki"
+            android:textAlignment="center"
+            android:textColor="#7A7A7A"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/femaleRadioButton"
+            android:background="@drawable/radio_selector"
+            android:padding="10dp"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:button="@color/transparent"
+            android:drawableTop="@drawable/ic_female"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/perempuan"
+            android:textAlignment="center"
+            android:textColor="#7A7A7A"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_usia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#6A6A6A"
+        android:textSize="16sp"
+        android:text="@string/usia"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SexRadioGroup" />
+
+    <EditText
+        android:id="@+id/et_usia"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/edit_text"
+        android:hint="@string/masukkan_usia"
+        android:padding="10dp"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_usia"
+        android:autofillHints="creditCardNumber" />
+
+    <TextView
+        android:id="@+id/tv_berat_badan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#6A6A6A"
+        android:textSize="16sp"
+        android:text="@string/berat_badan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_usia" />
+
+    <EditText
+        android:id="@+id/et_bb"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/edit_text"
+        android:hint="@string/masukkan_berat_badan"
+        android:padding="10dp"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_berat_badan"
+        android:autofillHints="creditCardNumber" />
+
+    <TextView
+        android:id="@+id/tv_tinggi_badan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#6A6A6A"
+        android:textSize="16sp"
+        android:text="@string/tinggi_badan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_bb" />
+
+    <EditText
+        android:id="@+id/et_tb"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/edit_text"
+        android:hint="@string/masukkan_tinggi_badan"
+        android:padding="10dp"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tinggi_badan"
+        android:autofillHints="creditCardNumber" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/selanjutnya"
+        android:textColor="@color/white"
+        android:background="@drawable/primary_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
